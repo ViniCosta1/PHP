@@ -12,7 +12,7 @@ Conforme vou estudando mais afundo, irei adicionando aqui comandos importantes. 
 Quando estiver com muitos comandos, irei **criar** um repositório apenas para <br>
 esses comandos.
 <hr>
-__Comando de configuração de conexão entre o GitHub e o VS Code__<br>
+<strong>Comando de configuração de conexão entre o GitHub e o VS Code</strong><br>
 - git config --global user.email "email do seu GitHub"<br>
 - git config --global user.name "nome do seu GitHub"
 <br>
