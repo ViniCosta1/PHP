@@ -18,7 +18,7 @@ esses comandos.
 <br>
 <br>
 <strong>Deletar uma branch remota (do GitHub) e local</strong><br>
-- git push origin --delete NomeDaBranchRemota
+- git push origin --delete NomeDaBranchRemota <br>
 - git branch -d NomeDaBranchLocal
 <br>
 <br>
