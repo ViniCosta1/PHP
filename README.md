@@ -17,10 +17,10 @@ esses comandos.
 - git config --global user.name "nome do seu GitHub"
 <br>
 <br>
-**Deletar uma branch remota (do GitHub) e local**<br>
+<strong>Deletar uma branch remota (do GitHub) e local</strong><br>
 - git push origin --delete NomeDaBranchRemota
 - git branch -d NomeDaBranchLocal
 <br>
 <br>
-Após deletar as branches, recomenda-se **sincroniza-las**, com o comando:<br>
+Após deletar as branches, recomenda-se <strong>sincroniza-las</strong>, com o comando:<br>
 - git fetch -p
