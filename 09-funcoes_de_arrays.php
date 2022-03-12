@@ -14,4 +14,7 @@
     * explode("/", "20/03/2005") = Transforma string em uma array
     * implode("-", $array) = Transforma array em string
 */
+$nomes = array("Rodrigo", "Maria", "José", "Vinicius");
+echo is_array($nomes);
+
 ?>
