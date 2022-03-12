@@ -15,6 +15,36 @@
     * implode("-", $array) = Transforma array em string
 */
 $nomes = array("Rodrigo", "Maria", "José", "Vinicius");
-echo is_array($nomes);
+echo "<h3>Função: \"is_array\"</h3>";
+echo is_array($nomes); //  Se digitou digitou "1", quer dizer que foi "True"
+echo "<br>";
+var_dump(is_array($nomes));
+echo "<br>";
 
+if(is_array($nomes)):
+    echo "É uma array";
+else:
+    echo "não é uma array";
+endif;
+
+////////////////////////////////////////////////////////////////////////////////////////
+echo "<hr>";
+echo "<h3>Função: \"in_array\"</h3>";
+
+echo in_array("Rodrigo", $nomes);
+echo in_array("Carlos", $nomes);
+echo "<br>";
+
+if (in_array("Vinicius", $nomes)):
+    echo "Está na array!";
+else:
+    echo "Não está na array!";
+endif;
+
+////////////////////////////////////////////////////////////////////////////////////////
+echo "<hr>";
+echo "<h3>Função: \"array_keys\"</h3>";
+
+$keys = array_keys($nomes);
+print_r($keys);
 ?>
