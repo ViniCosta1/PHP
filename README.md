@@ -36,10 +36,10 @@ repositório que deseja clonar.
 <br>
 <br>
 ➡️ <strong>Pull e Push</strong><br>
-Pull - Quando você fez suas alterações localmente, você precisa enviar para o GitHub<br>
+<strong>Pull</strong> - Quando você fez suas alterações localmente, você precisa enviar para o GitHub<br>
 para que as outras pessoas tenham acesso. Sendo assim, esse comando tem essa função:<br>
 - git pull
 <br>
-Push - é meio que o oposto. Quando foi feita alterações no GitHub e você quer passar<br>
+<strong>Push</strong> - é meio que o oposto. Quando foi feita alterações no GitHub e você quer passar<br>
 para o local, você usa esse comando:<br>
 - git push origin nome-da-branch
