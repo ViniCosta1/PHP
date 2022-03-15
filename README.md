@@ -31,6 +31,7 @@ tem que fazer a <strong>clonagem</strong> desse repositório na máquina local. 
 isso tem o comando:<br>
 - git clone "https://usuario@enderecoRemoto.com/repositorio.git​"
 <br>
+<br>
 No lugar desse endereço, você pode apenas colocar o link do site onde se encontra o<br>
 repositório que deseja clonar.
 <br>
