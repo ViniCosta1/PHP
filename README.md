@@ -34,6 +34,9 @@ isso tem o comando:<br>
 No lugar desse endereço, você pode apenas colocar o link do site onde se encontra o<br>
 repositório que deseja clonar.
 <br>
+Você também pode apenas clonar diretamente pelo icone do Git, que fica na barra lateral esquerda <br>
+(LEMBRANDO: Isso deve ser após ligar a conta com o Github).
+<br>
 <br>
 ➡️ <strong>Pull e Push</strong><br>
 <strong>Pull</strong> - Quando você fez suas alterações localmente, você precisa enviar para o GitHub<br>
