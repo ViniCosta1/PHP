@@ -31,8 +31,13 @@ tem que fazer a <strong>clonagem</strong> desse repositório na máquina local. 
 isso tem o comando:<br>
 - git clone "https://usuario@enderecoRemoto.com/repositorio.git​"
 <br>
+<br>
 No lugar desse endereço, você pode apenas colocar o link do site onde se encontra o<br>
 repositório que deseja clonar.
+<br>
+<br>
+Você também pode apenas clonar diretamente pelo icone do Git, que fica na barra lateral esquerda <br>
+(LEMBRANDO: Isso deve ser após ligar a conta com o Github).
 <br>
 <br>
 ➡️ <strong>Pull e Push</strong><br>
