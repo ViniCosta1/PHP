@@ -2,9 +2,9 @@
 
     /* 
         ! AVISO: Esse sistema de login apenas funciona se:
-        ! Os arquivos estiverem na pasta 'htdocs' do xampp
-        ! Haver um banco de dados mysql no xampp com o nome 'sistemalogin' com uma tabela chamada 'usuarios'
-        ! Haver 4 colunas com os nomes 'id', 'nome', 'login' e 'senha'
+        ! - Os arquivos estiverem na pasta 'htdocs' do xampp
+        ! - Haver um banco de dados mysql no xampp com o nome 'sistemalogin' com uma tabela chamada 'usuarios'
+        ! - Haver 4 colunas com os nomes 'id', 'nome', 'login' e 'senha'
         ! NOTA: O 'id' deverá ser o 'Primary Key' e a 'senha' deverá ser criptografada em 'md5'
     */
 
