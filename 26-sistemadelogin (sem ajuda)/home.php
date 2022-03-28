@@ -11,13 +11,14 @@
     endif;
 
     // * Dados
+    // ? Por que $id está retornando o valor null?
     $id = $_SESSION['id_usuario']; // * Pegando valor do arquivo index.php através de sessões
 
     $sql = "SELECT * FROM usuarios WHERE id = '$id'"; // * Código SQL para verificar se existe esse id no Banco de Dados
 
     $resultado = mysqli_query($connect, $sql); // * Fazer a consulta nesse Banco de Dados com o comando $sql
 
-    $dados = mysqli_fetch_array($resultado); // * Converte o resultado da consulta em uma array, onde os índices são os nomes das colunas
+    $dados = mysqli_fetch_array($resultado); // * Converte o resultado da consulta em uma array, onde os índices são os nomes das colunas 
     mysqli_close($connect);
 ?>
 
@@ -29,7 +30,7 @@
 
     <body>
         <h1>
-            Olá <?php echo $dados['nome']; ?>
+            Olá <?php echo $dados['id']; ?>
         </h1>
         <a href="logout.php">Sair</a>
     </body>

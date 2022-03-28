@@ -25,7 +25,7 @@
                 
                 $senha = md5($senha); // * Criptografando a senha digitada no forms em MD5 (usada no banco de dados)
 
-                $sql = "SELECT login FROM usuarios WHERE login = '$login' and senha = '$senha'"; // * Código SQL para verificar se existe esse login no Banco de Dados com essa senha
+                $sql = "SELECT login FROM usuarios WHERE login = '$login' AND senha = '$senha'"; // * Código SQL para verificar se existe esse login no Banco de Dados com essa senha
 
                 $resultado = mysqli_query($connect, $sql);
 
@@ -37,28 +37,41 @@
 
                     $_SESSION['logado'] = true; // * Criando um index para o valor true
 
+                    // ? Eu não sei o porquê que $dados['id'] está retornando um valor null
                     $_SESSION['id_usuario'] = $dados['id']; // * Criando um index para o valor $dados['id']
-                    
+
                     header('Location: home.php'); // * Redirecionar para a página home.php
                 else:
-                    $erros[] = "<li>Usuário e senha não confere</li>";
+                    $erros[] = "<li>Senha incorreta</li>";
                 endif;
+            else:
+                $erros[] = "<li>Login não encontrado</li>";
             endif;
         endif;
     endif;
 ?>
 
-<html> // * Fazer o HTML com o formulário primeiro
+<html> <!-- Fazer o formulário primeiro -->
     <head>
         <title>Login</title>
         <meta charset="utf-8">
     </head>
 
     <body>
+        <h1>
+            Formulário
+        </h1>
+        <?php
+            if (!empty($erros)): // * Se o array $erros não estiver vazio...
+                foreach ($erros as $erro):
+                    echo $erro;
+                endforeach;
+            endif;
+        ?>
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-            Login: <input type="text" name="login" id="">
-            Senha: <input type="password" name="senha" id="">
-            <button type="submit" name="Entrar"></button>
+            Login: <input type="text" name="login" id=""><br>
+            Senha: <input type="password" name="senha" id=""><br>
+            <button type="submit" name="Entrar">Entrar</button>
         </form>
     </body>
 </html>
