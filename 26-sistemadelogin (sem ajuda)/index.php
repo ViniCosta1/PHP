@@ -25,7 +25,9 @@
                 
                 $senha = md5($senha); // * Criptografando a senha digitada no forms em MD5 (usada no banco de dados)
 
-                $sql = "SELECT login FROM usuarios WHERE login = '$login' AND senha = '$senha'"; // * Código SQL para verificar se existe esse login no Banco de Dados com essa senha
+                // ? O erro que estava dando era pq eu tinha colocado para selecionar apenas a coluna login: "SELECT login FROM...."
+                // ? E não: SELECT * FROM..." que significa que quero pegar todas as tabelas
+                $sql = "SELECT * FROM usuarios WHERE login = '$login' AND senha = '$senha'"; // * Código SQL para verificar se existe esse login no Banco de Dados com essa senha
 
                 $resultado = mysqli_query($connect, $sql);
 
@@ -37,7 +39,6 @@
 
                     $_SESSION['logado'] = true; // * Criando um index para o valor true
 
-                    // ? Eu não sei o porquê que $dados['id'] está retornando um valor null
                     $_SESSION['id_usuario'] = $dados['id']; // * Criando um index para o valor $dados['id']
 
                     header('Location: home.php'); // * Redirecionar para a página home.php

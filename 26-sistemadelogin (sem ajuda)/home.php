@@ -11,7 +11,6 @@
     endif;
 
     // * Dados
-    // ? Por que $id está retornando o valor null?
     $id = $_SESSION['id_usuario']; // * Pegando valor do arquivo index.php através de sessões
 
     $sql = "SELECT * FROM usuarios WHERE id = '$id'"; // * Código SQL para verificar se existe esse id no Banco de Dados
@@ -30,7 +29,7 @@
 
     <body>
         <h1>
-            Olá <?php echo $dados['id']; ?>
+            Olá <?php echo $dados['nome']; ?>
         </h1>
         <a href="logout.php">Sair</a>
     </body>
