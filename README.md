@@ -48,3 +48,5 @@ para que as outras pessoas tenham acesso. Sendo assim, esse comando tem essa fun
 <strong>Push</strong> - é meio que o oposto. Quando foi feita alterações no GitHub e você quer passar<br>
 para o local, você usa esse comando:<br>
 - git push origin nome-da-branch
+
+➡️ <strong>Enviar um projeto existente na máquina local para o GitHub </strong>:<br>
