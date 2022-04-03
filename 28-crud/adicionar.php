@@ -29,8 +29,8 @@ include_once "includes/header.php";
                     <input class="form-control mb-4" type="int" name="idade" id="idade" placeholder="Idade">
             </div>
             
-            <button class="btn btn-primary" name="btn-cadastrar" type="submit">Adicionar</button>
-            <a href="index.php" class="btn btn-success" type="submit">Lista de Clientes</a>
+            <button class="btn btn-primary mt-1 mt-sm-0 mt-md-0" name="btn-cadastrar" type="submit">Adicionar</button>
+            <a href="index.php" class="btn btn-success mt-1 mt-sm-0 mt-md-0" type="submit">Lista de Clientes</a>
         </form>
     </div>
 </div>
