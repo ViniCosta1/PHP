@@ -2,11 +2,23 @@
 require_once "db_connection.php";
 session_start();
 
+// * Clear - Função para prevenir ataques XSS (colocam scripts dentro de inputs no site)
+function clear($input) {
+    global $connect;
+
+    // * SQL
+    $var = mysqli_escape_string($connect, $input);
+
+    // * Filtrando
+    $var = htmlspecialchars($var);
+    return $var;
+}
+
 if (isset($_POST['btn-cadastrar'])):
-    $nome = mysqli_escape_string($connect, $_POST['nome']);
-    $sobrenome = mysqli_escape_string($connect, $_POST['sobrenome']);
-    $email = mysqli_escape_string($connect, $_POST['email']);
-    $idade = mysqli_escape_string($connect, $_POST['idade']);
+    $nome = clear($_POST['nome']);
+    $sobrenome = clear($_POST['sobrenome']);
+    $email = clear($_POST['email']);
+    $idade = clear($_POST['idade']);
 
     // * Essa linha cria uma linha na tabela clientes através desse código SQL no banco de dados
     $sql = "INSERT INTO clientes (nome, sobrenome, email, idade) VALUES ('$nome', '$sobrenome', '$email', '$idade')";
