@@ -26,7 +26,7 @@ include_once "includes/header.php";
             </div>
             <div class="col-12 col-sm-12 col-md-12">
                     <label for="idade">Idade:</label>
-                    <input class="form-control mb-4" type="int" name="idade" id="idade" placeholder="Idade">
+                    <input class="form-control mb-4" type="number" name="idade" id="idade" placeholder="Idade">
             </div>
             
             <button class="btn btn-primary mt-1 mt-sm-0 mt-md-0" name="btn-cadastrar" type="submit">Adicionar</button>

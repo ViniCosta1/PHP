@@ -21,7 +21,7 @@ if (isset($_POST['btn-cadastrar'])):
     $idade = clear($_POST['idade']);
 
     // * Essa linha cria uma linha na tabela clientes através desse código SQL no banco de dados
-    $sql = "INSERT INTO clientes (nome, sobrenome, email, idade) VALUES ('$nome', '$sobrenome', '$email', '$idade')";
+    $sql = "INSERT INTO clientes (nome, sobrenome, email, idade) VALUES ('$nome', '$sobrenome', '$email', $idade)";
 
     /*
         * Verificar se foi cadastrado com sucesso ou não 
