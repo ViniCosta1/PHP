@@ -62,7 +62,7 @@ os arquivos preparados através desse código:<br>
 <br>
 Mas calma que ele ainda não foi para o GitHub. Depois de enviar, devemos criar um repositório manualmente no GitHub.<br>
 Depois de criado o repositório, basta vincular o repositório com o projeto local. O comando é:<br>
-<li>git remote add origin 'https://github.com/usuario/nomedomeurepositorio.git'</li>
+<li>git remote add origin "https://github.com/usuario/nomedomeurepositorio.git"</li>
 <br>
 Esse link é o link do repositório que aparece logo quando criamos. Podemos usar tanto ele, quanto o da URL. <br>
 Após tudo isso, temos apenas que realizar o <strong>push</strong>, com esse comando:<br>
