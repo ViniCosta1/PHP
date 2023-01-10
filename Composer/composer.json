@@ -1,0 +1,24 @@
+{
+    "name": "vinicosta/buscador-de-cursos",
+    "description": "Pacote buscador de cursos",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Vinicosta\\BuscadorDeCursos\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vinicius Costa",
+            "email": "vinicosta154@hotmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.5",
+        "symfony/dom-crawler": "^5.3",
+        "symfony/css-selector": "^6.0",
+        "mpdf/mpdf": "^6.1",
+        "dompdf/dompdf": "^2.0"
+
+    }
+}
